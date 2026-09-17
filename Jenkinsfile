@@ -12,13 +12,13 @@ pipeline {
             parallel {
                 stage('Frontend Check') {
                     steps {
-                        bat 'python frontend_check.py'
+                        bat 'C:\\Users\\Vallabh\\AppData\\Local\\Python\\bin\\python.exe frontend_check.py'
                     }
                 }
 
                 stage('Backend Check') {
                     steps {
-                        bat 'python backend_check.py'
+                        bat 'C:\\Users\\Vallabh\\AppData\\Local\\Python\\bin\\python.exe backend_check.py'
                     }
                 }
             }
